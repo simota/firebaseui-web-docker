@@ -9,4 +9,4 @@ git clone https://github.com/firebase/firebaseui-web.git
 
 docker run -v `pwd`/firebaseui-web:/work \
 	-w /work --rm -it firebaseui-web-build:latest \
-	/bin/bash -c "npm install && npm run build build-js-${LANGUAGE_CODE} && npm run build build-npm-${LANGUAGE_CODE}"
+	/bin/bash -c "npm install && npm run build && npm run build build-js-${LANGUAGE_CODE} && npm run build build-npm-${LANGUAGE_CODE}"
